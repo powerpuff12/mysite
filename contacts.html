@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,12 @@
     <link rel="stylesheet" href="css/normilize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="icons/Лого.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -16,87 +23,90 @@
         <div class="nav-menu">
             <nav>
                 <a class="nav-menu__item" href="index.html">ГЛАВНАЯ</a>
-                <a class="nav-menu__item" href="">ГАЛЕРЕЯ</a>
+                <a class="nav-menu__item" href="calc.html">КАЛЬКУЛЯТОР</a>
                 <a class="nav-menu__item" href="reviews.html">ОТЗЫВЫ</a>
-                <a class="nav-menu__item" href="">О НАС</a>
+                <a class="nav-menu__item" href="galery.html">ГАЛЕРЕЯ</a>
                 <a class="nav-menu__item" href="contacts.html">КОНТАКТЫ</a>
             </nav>
-            <form> 
-                <input type="text" name="text" class="search" placeholder="Поиск">
-                <input type="submit" name="submit" class="submit" value="Поиск">
-            </form>
         </div>
     </header>
 
-    <!--Первая секция-->
-    <section class="main-section__contacts">
-        <img class="main-section__background" src="img/fon2.png" alt="">
-        <h3 class="title-contacts">ХОТИТЕ СОЗДАТЬ СВОЙ ПРОЕКТ?<br>ДАВАЙТЕ ОБГОВОРИМ!</h3>
-        <div class="cards">
-            <div class="card">
-                <img class="card-icon-1" src="icons/Address.svg" alt="">
-                <h3 class="card-title">Мы находимся:</h3>
-                <p class="card-text-1">​​Владимирская область, г. Александров, ул. Перфильева, д.2, 2-й этаж, офис №1</p>
-            </div>
-            <div class="card">
-                <img class="card-icon-2" src="icons/Phone.svg" alt="">
-                <h3 class="card-title">Наш номер:</h3>
-                <p class="card-text-2">​​+7 (920) 908-95-40 <br>
-                                                +7 (910) 098-88-16</p>
-            </div>
-            <div class="card">
-                <img class="card-icon-3" src="icons/Letter.svg" alt="">
-                <h3 class="card-title">Наша почта и соц.сети:</h3>
-                <a href="mailto:stroyedom@mail.ru=" class="card-text-3">stroyedom@mail.ru</a>
-                <div class="soc-med-icon">
-                    <a href="https://vk.com/stroyedom"><img width="90px" height="90px" src="img/vk.png" alt=""></a>
-                    <a href="https://www.instagram.com/stroyedom/"><img width="90px" height="90px" src="img/inst.png" alt=""></a>
+    <div class="contacts">
+        <!--Первая секция-->
+        <section class="main-section__contacts">
+         <h3 class="title-contacts">ХОТИТЕ СОЗДАТЬ СВОЙ ПРОЕКТ?<br>ДАВАЙТЕ ОБГОВОРИМ!</h3>
+            <div class="cards">
+                <div class="card">
+                    <img class="card-icon-1" src="icons/Address.svg" alt="">
+                    <h3 class="card-title">Мы находимся:</h3>
+                    <p class="card-text-1">​​Владимирская область, г. Александров, ул. Перфильева, д.2, 2-й этаж, офис №1</p>
                 </div>
-            </div> 
-        </div>    
+                <div class="card">
+                    <img class="card-icon-2" src="icons/Phone.svg" alt="">
+                    <h3 class="card-title">Наш номер:</h3>
+                    <p class="card-text-2">​​+7 (920) 908-95-40 <br>
+                                                +7 (910) 098-88-16</p>
+                </div>
+                <div class="card">
+                    <img class="card-icon-3" src="icons/Letter.svg" alt="">
+                    <h3 class="card-title">Наша почта и соц.сети:</h3>
+                    <a href="mailto:stroyedom@mail.ru=" class="card-text-3">stroyedom@mail.ru</a>
+                    <div class="soc-med-icon">
+                        <a href="https://vk.com/stroyedom"><img width="90px" height="90px" src="img/vk.png" alt=""></a>
+                        <a href="https://www.instagram.com/stroyedom/"><img width="90px" height="90px" src="img/inst.png" alt=""></a>
+                    </div>
+                </div> 
+            </div>
+        </section>  
         
-    <!--Форма--> 
-    <section class="feedback">
-        <p class="feedback__title">ОБРАТНАЯ СВЯЗЬ</p>
-        <p class="feedback__text">ДОСТУПНО 24 ЧАСА</p>
-        <form class="feedback__form">
-            <div class="col-25">
-                <label class="label-name" for="fname">Имя:</label>
-            </div>
-            <div>
-                <input class="feedback__input" type="text" id="fname" name="firstname" placeholder="Введите Ваше имя">
-            </div>
-
-            <div class="col-25">
-                <label class="label-name" for="tel">Телефон:</label>
-            </div>
-            <div>
-                <input class="feedback__input" type="tel" id="tel" name="tel" placeholder="Введите Ваш телефон">
-            </div>
-
-            <div class="col-25">
-                <label class="label-name" for="email">Почта:</label>
-            </div>
-            <div>
-                <input class="feedback__input" type="email" id="email" name="email" placeholder="Введите Вашу эл. почту">
-            </div>
-
-            <div class="col-25">
-                <label class="label-name" for="subject">Сообщение:</label>
-            </div>
-
-            <div>
-                <textarea class="feedback__big-msg" id="subject" name="subject" placeholder="Введи Ваше сообщение"></textarea>
-            </div>
-                <input class="feedback__button" type="submit" value="Отправить">
-        </form>
-    </section>
+        <!--Форма-->
+        <div class="feedback-main">
+            <div class="feedback">
+                <p class="feedback__title">ОБРАТНАЯ СВЯЗЬ</p>
+                <p class="feedback__text">ДОСТУПНО 24 ЧАСА</p>
+                <form class="feedback__form">
+                    <div class="col-25">
+                        <label class="label-name" for="fname">Имя:</label>
+                    </div>
+                    <div>
+                        <input class="feedback__input" type="text" id="fname" name="firstname" placeholder="Введите Ваше имя">
+                    </div>
     
-    <!--Карта-->
-    <section class="cont_box">
-        <h2 class="cont_box__title">​Вт-пт c 10:00 до 17:00; сб с 10:00 до 15:00</h2>
-        <iframe class="cont_box__map" src="https://www.google.com/maps/embed?pb=!4v1608303517130!6m8!1m7!1sqI0btb5sH4PyqJqLVTVf0g!2m2!1d56.39456842114446!2d38.70353340903934!3f260.14!4f3.019999999999996!5f1.0532550163401457" allowfullscreen loading="lazy"></iframe>
-    </section>
+                    <div class="col-25">
+                        <label class="label-name" for="tel">Телефон:</label>
+                    </div>
+                    <div>
+                        <input class="feedback__input" type="tel" id="tel" name="tel" placeholder="Введите Ваш телефон">
+                    </div>
+    
+                    <div class="col-25">
+                        <label class="label-name" for="email">Почта:</label>
+                    </div>
+                    <div>
+                        <input class="feedback__input" type="email" id="email" name="email" placeholder="Введите Вашу эл. почту">
+                    </div>
+    
+                    <div class="col-25">
+                        <label class="label-name" for="subject">Сообщение:</label>
+                    </div>
+    
+                    <div>
+                        <textarea class="feedback__big-msg" id="subject" name="subject" placeholder="Введи Ваше сообщение"></textarea>
+                    </div>
+                        <input class="feedback__button" type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    
+        <!--Карта-->
+        <section class="cont_box">
+            <h2 class="cont_box__title">​Вт-пт c 10:00 до 17:00; сб с 10:00 до 15:00</h2>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1730728902088!6m8!1m7!1sb8Z_50o05z3r6ULfqivgCw!2m2!1d56.39463719483964!2d38.70346511996117!3f247.67491!4f0!5f0.7820865974627469" width="1000" height="450" style="border:0; bottom: 100px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </div>
+    
 
     <!-- Footer -->
     <footer class="footer">
@@ -114,22 +124,22 @@
 
             <div class="footer-info__elements">
                 <h2 class="footer-info__title">НАШ АДРЕС</h2>
-                    <p class="footer-info__text">Владимирская область, г. Александров, ул. Перфильева, д. 2, 2-й этаж, офис №1. (напротив 14 школы)</p>
+                <p class="footer-info__text">Владимирская область, г. Александров, ул. Перфильева, д. 2, 2-й этаж, офис №1. (напротив 14 школы)</p>
             </div>
 
             <div class="footer-info__elements">
                 <h2 class="footer-info__title">О НАС</h2>
-                    <a href="" class="footer-info__text-1">Дома из бруса</a>
-                    <a href="" class="footer-info__text-1">Каркасные дома</a>
-                    <a href="" class="footer-info__text-1">Дачные бытовки</a>
+                <a href="" class="footer-info__text-1">Дома из бруса</a>
+                <a href="" class="footer-info__text-1">Каркасные дома</a>
+                <a href="" class="footer-info__text-1">Дачные бытовки</a>
             </div>
 
             <div class="footer-info__elements">
                 <h2 class="footer-info__title">УСЛУГИ</h2>
-                    <a href="#" class="footer-info__text-1">Ремонт квартир</a>
-                    <a href="#" class="footer-info__text-1">Монтаж Сайдинга</a>
-                    <a href="#" class="footer-info__text-1">Кровельные работы</a>
-                    <a href="#" class="footer-info__text-1">Реконструкция домов</a>
+                <a href="#" class="footer-info__text-1">Ремонт квартир</a>
+                <a href="#" class="footer-info__text-1">Монтаж Сайдинга</a>
+                <a href="#" class="footer-info__text-1">Кровельные работы</a>
+                <a href="#" class="footer-info__text-1">Реконструкция домов</a>
             </div>
         </div>
     </footer>
