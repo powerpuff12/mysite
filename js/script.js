@@ -58,6 +58,7 @@ function showAllImages() {
     document.querySelector('.show-all').style.display = 'none';
 }
 
+document.addEventListener('DOMContentLoaded', function() {
 // Цены за элементы калькулятора
 const prices = {
     houseTypes: {
@@ -171,6 +172,7 @@ function calculateCost() {
     // Отображение детализации стоимости
     costDetailsElement.innerHTML = costDetails.join('');
 }
+});
 
 document.getElementById('search-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Предотвращаем отправку формы
